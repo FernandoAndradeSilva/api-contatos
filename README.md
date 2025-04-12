@@ -193,3 +193,40 @@ Este projeto utiliza o Maven como ferramenta de gerenciamento de dependências. 
 
 A aplicação está preparada para **escalar**, **testável** e com **estrutura profissional**. A combinação da **arquitetura Onion** com **boas práticas de segurança** resulta em um sistema **robusto**, **manutenível** e alinhado aos padrões modernos de integração com **APIs externas** como a **HubSpot**.
 
+# Reposta ao DESAFIO
+
+# Controllers Implementados
+
+## 1. **AuthenticationController**
+### Funções:
+- **Geração da Authorization URL**:
+   - Endpoint: `GET /oauth/authorize`
+   - Descrição: Gera e retorna a URL de autorização do HubSpot para iniciar o fluxo OAuth.
+   - Método: `generateAuthorizationUrl()`
+
+
+
+- **Processamento do Callback OAuth**:
+   - Endpoint: `GET /oauth/callback`
+   - Descrição: Recebe o código de autorização fornecido pelo HubSpot e realiza a troca pelo token de acesso.
+   - Método: `handleOAuthCallback(String code)`
+
+---
+
+## 2. **ContactController**
+### Funções:
+- **Criação de Contatos**:
+   - Endpoint: `POST /hubspot/contacts`
+   - Descrição: Faz a criação de um contato no CRM através da API do HubSpot. Respeita as políticas de rate limit definidas pela API.
+   - Método: `createContact(Map<String, String> contato)`
+
+---
+
+## 3. **WebhookController**
+### Funções:
+- **Recebimento de Webhook para Criação de Contatos**:
+   - Endpoint: `POST /webhook/hubspot`
+   - Descrição: Escuta e processa eventos do tipo "contact.creation", enviados pelo webhook do HubSpot.
+   - Método: `handleWebhook(List<Map<String, Object>> payload)`
+
+---
