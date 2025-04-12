@@ -230,3 +230,12 @@ A aplicação está preparada para **escalar**, **testável** e com **estrutura 
    - Método: `handleWebhook(List<Map<String, Object>> payload)`
 
 ---
+
+⚠️ Observação sobre Testes de Webhook (contact.creation)
+A aplicação implementa o endpoint necessário para receber eventos de webhooks da HubSpot, como o contact.creation. No entanto, não será possível testar esse recurso localmente durante o desafio devido a uma limitação técnica imposta pela própria HubSpot:
+
+A HubSpot exige que a URL de destino dos webhooks esteja acessível via HTTPS público.
+Isso significa que URLs locais como http://localhost:8080/webhook não são aceitas.
+
+🧪 Alternativa para testes (fora do escopo do desafio)
+Para testes reais, seria necessário utilizar ferramentas como o ngrok, que expõem seu ambiente local de forma segura e pública via HTTPS.
