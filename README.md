@@ -34,7 +34,7 @@ Essa estrutura é compatível com os princípios do **Domain-Driven Design (DDD)
 ## Como Executar
 
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repo.git
+git clone https://github.com/FernandoAndradeSilva/api-contatos
 ```
 
 Acesse:
