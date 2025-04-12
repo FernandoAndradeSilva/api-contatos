@@ -159,12 +159,14 @@ Este projeto utiliza o Maven como ferramenta de gerenciamento de dependências. 
     - **Artifact ID**: `spring-boot-starter-oauth2-client`
     - **Descrição**: Fornece funcionalidades para integrar autenticação OAuth2 com clientes, essencial para comunicação com a API do HubSpot.
 
-2. **Spring Boot Starter Web**
+
+3. **Spring Boot Starter Web**
     - **Group ID**: `org.springframework.boot`
     - **Artifact ID**: `spring-boot-starter-web`
     - **Descrição**: Adiciona as dependências necessárias para criar uma aplicação web com o Spring Boot. Inclui o Tomcat, Jackson, e outras bibliotecas necessárias para trabalhar com HTTP e APIs RESTful.
 
-5. **Lombok**
+
+6. **Lombok**
     - **Group ID**: `org.projectlombok`
     - **Artifact ID**: `lombok`
     - **Descrição**: Biblioteca que reduz o código boilerplate, como getters, setters, `toString`, `equals`, e `hashCode`. Usada principalmente com anotações.
