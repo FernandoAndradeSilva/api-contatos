@@ -19,7 +19,7 @@ Esta é uma aplicação Java com integração à API do HubSpot via OAuth 2.0, q
 
 ---
 
-## 🎯 Objetivo
+## Objetivo
 
 Este projeto tem como finalidade integrar uma aplicação Java com o HubSpot CRM para:
 
@@ -31,7 +31,7 @@ Este projeto tem como finalidade integrar uma aplicação Java com o HubSpot CRM
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - Java 21
 - Spring Boot 3
@@ -43,7 +43,7 @@ Este projeto tem como finalidade integrar uma aplicação Java com o HubSpot CRM
 
 ---
 
-## 🧱 Arquitetura Onion
+## Arquitetura Onion
 
 A arquitetura Onion (Cebola) foi escolhida por isolar bem as responsabilidades e permitir que a lógica de negócio não dependa diretamente de detalhes técnicos.
 
@@ -63,11 +63,11 @@ A arquitetura Onion (Cebola) foi escolhida por isolar bem as responsabilidades e
 
 ---
 
-## ⚙️ Instalação e Execução
+## Instalação e Execução
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/hubspot-integration.git
+   git clone https://github.com/FernandoAndradeSilva/api-contatos
     ````
 2. Configure o application.properties:
 
@@ -86,7 +86,7 @@ hubspot.auth-url=https://app.hubspot.com/oauth/authorize
 
 
 
-# 📡 Endpoints Disponíveis
+#  Endpoints Disponíveis
 
 | Método | URL                     | Descrição                          |
 |--------|--------------------------|-------------------------------------|
@@ -96,7 +96,7 @@ hubspot.auth-url=https://app.hubspot.com/oauth/authorize
 
 ---
 
-## 🔐 Autenticação OAuth 2.0
+##  Autenticação OAuth 2.0
 
 - Acesse `/oauth/authorize` para redirecionar ao HubSpot.
 - Após consentimento, o HubSpot redireciona para `/oauth/callback?code=xxx`.
@@ -104,7 +104,7 @@ hubspot.auth-url=https://app.hubspot.com/oauth/authorize
 
 ---
 
-## 🧾 Criação de Contatos
+##  Criação de Contatos
 
 **Requisição:**
 
@@ -118,7 +118,7 @@ Content-Type: application/json
   "lastname": "Silva"
 }
 ````
-# 🧾 Respostas da API
+#  Respostas da API
 
 **Respostas:**
 
@@ -128,7 +128,7 @@ Content-Type: application/json
 
 ---
 
-# 🛡️ Boas Práticas de Segurança Aplicadas
+# Boas Práticas de Segurança Aplicadas
 
 Asseguramos conformidade com as recomendações da HubSpot:
 
@@ -140,7 +140,7 @@ Asseguramos conformidade com as recomendações da HubSpot:
 
 ---
 
-# 🪵 Tratamento de Erros e Logs
+#  Tratamento de Erros e Logs
 
 - **SLF4J + Logback**: Usado para rastreamento completo da aplicação.
 - **Logs informativos**: Incluímos tentativa, URL e respostas HTTP.
@@ -187,7 +187,7 @@ Este projeto utiliza o Maven como ferramenta de gerenciamento de dependências. 
 
 
 
-# 📌 Considerações Finais
+#  Considerações Finais
 
 A aplicação está preparada para **escalar**, **testável** e com **estrutura profissional**. A combinação da **arquitetura Onion** com **boas práticas de segurança** resulta em um sistema **robusto**, **manutenível** e alinhado aos padrões modernos de integração com **APIs externas** como a **HubSpot**.
 
